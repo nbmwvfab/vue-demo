@@ -6,12 +6,20 @@
 </template>
 
 <script>
-    import FooterGuirde from "@/components/FooterGuide/FooterGuirde";
-
+    import FooterGuirde from "@/components/FooterGuide/FooterGuirde"
+		import {mapActions} from 'vuex'
     export default {
         name: 'app',
         components: {
             FooterGuirde
+        },
+				mounted() {
+            // const result = this.$store.dispatch('getAddress')
+						const result = this.getAddress()
+						console.log('----------',result)
+        },
+				methods:{
+            ...mapActions(['getAddress'])
         }
     }
 </script>
