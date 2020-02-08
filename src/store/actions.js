@@ -1,7 +1,7 @@
 /*
 
  */
-import {RECEIVE_ADDRESS} from './mutation-types'
+import {RECEIVE_ADDRESS, RECEIVE_CATEGORYS, RECEIVE_SHOPS} from './mutation-types'
 import {reqAddress,reqCategorys,reqShops} from '../api'
 export default {
 
@@ -17,8 +17,10 @@ export default {
         const reslut = await reqCategorys()
         if(reslut.code===0){
             const categorys = reslut.data
-            commit(RECEIVE_ADDRESS,{categorys})
+
+            commit(RECEIVE_CATEGORYS,{categorys})
         }
+
     },
     async getShops({commit,state}){
         const {latitude,longitude} = state
@@ -26,7 +28,7 @@ export default {
         const reslut = await reqShops({latitude,longitude})
         if(reslut.code===0){
             const shops = reslut.data
-            commit(RECEIVE_ADDRESS,{shops})
+            commit(RECEIVE_SHOPS,{shops})
         }
     },
 }

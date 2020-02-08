@@ -13,12 +13,10 @@
         components: {
             FooterGuirde
         },
-				mounted() {
-            // const result = this.$store.dispatch('getAddress')
-						const result = this.getAddress()
-						console.log('----------',result)
+		mounted() {
+			this.getAddress()
         },
-				methods:{
+		methods:{
             ...mapActions(['getAddress'])
         }
     }

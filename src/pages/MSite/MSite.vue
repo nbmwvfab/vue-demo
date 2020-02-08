@@ -14,104 +14,12 @@
     <nav class="msite_nav">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="javascript:" class="link_to_food">
+                <div v-for="(page, index) in pages" :key="index" class="swiper-slide">
+                    <a v-for="(category, index) in page" :key="index"  class="link_to_food">
                         <div class="food_container">
-                            <img src="./images/nav/1.jpg">
+                            <img :src=category.image_url>
                         </div>
-                        <span>甜品饮品</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/2.jpg">
-                        </div>
-                        <span>商超便利</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/3.jpg">
-                        </div>
-                        <span>美食</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/4.jpg">
-                        </div>
-                        <span>简餐</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/5.jpg">
-                        </div>
-                        <span>新店特惠</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/6.jpg">
-                        </div>
-                        <span>准时达</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/7.jpg">
-                        </div>
-                        <span>预订早餐</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/8.jpg">
-                        </div>
-                        <span>土豪推荐</span>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/9.jpg">
-                        </div>
-                        <span>甜品饮品</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/10.jpg">
-                        </div>
-                        <span>商超便利</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/11.jpg">
-                        </div>
-                        <span>美食</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/12.jpg">
-                        </div>
-                        <span>简餐</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/13.jpg">
-                        </div>
-                        <span>新店特惠</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/14.jpg">
-                        </div>
-                        <span>准时达</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/1.jpg">
-                        </div>
-                        <span>预订早餐</span>
-                    </a>
-                    <a href="javascript:" class="link_to_food">
-                        <div class="food_container">
-                            <img src="./images/nav/2.jpg">
-                        </div>
-                        <span>土豪推荐</span>
+                        <span>{{category.title}}</span>
                     </a>
                 </div>
             </div>
@@ -135,25 +43,54 @@
     import HeaderTop from "@/components/HeaderTop/HeaderTop";
     import ShopList from "@/components/ShopList/ShopList";
     import Swiper from 'swiper'
-    import {mapState} from 'vuex'
+    import {mapState,mapActions} from 'vuex'
     import 'swiper/css/swiper.css'
 
     export default {
         name: "MSite",
+        computed:{
+            ...mapState(['address','categorys','shops','latitude','longitude']),
+            pages(){
+                const {categorys} =this
+                const arry =[]
+                let minArry = []
+                categorys.forEach(c=>{
+                if(minArry.length===8){
+                    minArry=[]
+                }
+                if(minArry.length===0){
+                    arry.push(minArry)
+                }
+                c.image_url = require('' + c.image_url)
+                minArry.push(c)
+                })
+                return arry
+            }
+        },
         components:{
             HeaderTop,
             ShopList
         },
         mounted() {
-            new Swiper('.swiper-container',{
-                loop:true,
-                pagination:{
-                    el:'.swiper-pagination'
-                }
-            })
+            this.getCategorys()
+            const {latitude, longitude} =this
+            this.getShops({latitude,longitude})
+
         },
-        computed:{
-            ...mapState(['address'])
+        methods:{
+            ...mapActions(['getCategorys','getShops'])
+        },
+        watch:{
+            categorys(){
+                this.$nextTick(()=>{
+                    new Swiper('.swiper-container',{
+                        loop:true,
+                        pagination:{
+                            el:'.swiper-pagination'
+                        }
+                    })
+                })
+            }
         }
     }
 </script>
@@ -199,5 +136,4 @@
                 .swiper-pagination
                     >span.swiper-pagination-bullet-active
                         background #02a774
-
 </style>
