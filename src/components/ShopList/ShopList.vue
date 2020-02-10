@@ -1,20 +1,20 @@
 <template>
 	<div class="shop_container">
 		<ul class="shop_list">
-			<Shop class="shop_li border-1px" v-for="(shop, index) in shops" :key="index" :shop="shop">
+			<ShopItem class="shop_li border-1px" v-for="(shop, index) in shops" :key="index" :shop="shop">
 
-			</Shop>
+			</ShopItem>
 		</ul>
 	</div>
 </template>
 
 <script>
 	import {mapState} from 'vuex'
-	import Shop from "./Shop";
+	import ShopItem from "./ShopItem";
     export default {
         name: "ShopList",
 		components:{
-			Shop
+			ShopItem
 		},
 		computed:{
 			...mapState(['shops'])
