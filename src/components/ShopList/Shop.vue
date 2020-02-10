@@ -24,14 +24,14 @@
                         </div>
                     </section>
                     <section class="shop_rating_order_right">
-                        <span class="delivery_style delivery_right">{{shop.delivery_mode.text}}</span>
+                        <span class="delivery_style delivery_right" v-if="shop.delivery_mode">{{shop.delivery_mode.text}}</span>
                     </section>
                 </section>
                 <section class="shop_distance">
                     <p class="shop_delivery_msg">
                         <span>¥{{shop.float_minimum_order_amount}}起送</span>
                         <span class="segmentation">/</span>
-                        <span>{{shop.piecewise_agent_fee.tip}}</span>
+                        <span v-if="shop.piecewise_agent_fee">{{shop.piecewise_agent_fee.tip}}</span>
                     </p>
                 </section>
             </div>

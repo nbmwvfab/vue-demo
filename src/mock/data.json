@@ -1,0 +1,257 @@
+{
+  "address": {
+    "address": "北京市昌平区337省道",
+    "city": "北京市",
+    "geohash": "40.10038,116.36867",
+    "latitude": "40.10038",
+    "longitude": "116.36867",
+    "name": "昌平区北七家宏福科技园(337省道北)"
+  },
+  "categorys": [
+      {
+        "id": 1,
+        "is_in_serving": true,
+        "description": "特步-春季焕新",
+        "title": "无处不仿古",
+        "link": "",
+        "image_url": "./images/nav/1.jpg",
+        "icon_url": "",
+        "title_color": "",
+        "__v": 0
+      },
+      {
+        "id": 2,
+        "is_in_serving": true,
+        "description": "萍全棉时代-全棉品",
+        "title": "seaweed",
+        "image_url": "./images/nav/2.jpg",
+        "link": "",
+        "icon_url": "",
+        "title_color": "",
+        "__v": 0
+      },
+
+      {
+        "id": 3,
+        "is_in_serving": true,
+        "description": "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.",
+        "title": "Spring Boot",
+        "image_url": "./images/nav/3.jpg",
+        "link": "",
+        "icon_url": "",
+        "title_color": "",
+        "__v": 0
+      },
+      {
+        "id": 4,
+        "is_in_serving": true,
+        "description": "Provides core support for dependency injection, transaction management, web apps, data access, messaging and more.",
+        "title": "Spring Framework",
+        "image_url": "./images/nav/4.jpg",
+        "link": "",
+        "icon_url": "",
+        "title_color": "",
+        "__v": 0
+      },
+    {
+      "id": 5,
+      "is_in_serving": true,
+      "description": "An orchestration service for composable data microservice applications on modern runtimes.",
+      "title": "Spring Cloud Data Flow",
+      "image_url": "./images/nav/5.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 6,
+      "is_in_serving": true,
+      "description": "Provides a set of tools for common patterns in distributed systems. Useful for building and deploying microservices.",
+      "title": "Spring Cloud",
+      "image_url": "./images/nav/6.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 7,
+      "is_in_serving": true,
+      "description": "Provides a consistent approach to data access – relational, non-relational, map-reduce, and beyond.",
+      "title": "Spring Data",
+      "image_url": "./images/nav/7.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 8,
+      "is_in_serving": true,
+      "description": "Supports the well-known Enterprise Integration Patterns via lightweight messaging and declarative adapters.",
+      "title": "Spring Integration",
+      "image_url": "./images/nav/8.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 9,
+      "is_in_serving": true,
+      "description": "Simplifies and optimizes the work of processing high-volume batch operations.",
+      "title": "Spring Batch",
+      "image_url": "./images/nav/9.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 10,
+      "is_in_serving": true,
+      "description": "Protects your application with comprehensive and extensible authentication and authorization support.",
+      "title": "Simplifies",
+      "image_url": "./images/nav/10.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 11,
+      "is_in_serving": true,
+      "description": "Simplifies creating REST representations that follow the HATEOAS principle.",
+      "title": "Spring HATEOAS",
+      "image_url": "./images/nav/11.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 12,
+      "is_in_serving": true,
+      "description": "Document RESTful services by combining hand-written documentation with auto-generated snippets produced with Spring MVC Test or REST Assured.",
+      "title": "Spring REST Docs",
+      "image_url": "./images/nav/12.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 13,
+      "is_in_serving": true,
+      "description": "Applies core Spring concepts to the development of AMQP-based messaging solutions.",
+      "title": "Spring AMQP",
+      "image_url": "./images/nav/13.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 14,
+      "is_in_serving": true,
+      "description": "Simplifies the development of mobile web apps through device detection and progressive rendering options.",
+      "title": "Spring Mobile",
+      "image_url": "./images/nav/14.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 15,
+      "is_in_serving": true,
+      "description": "Provides key Spring components for use in developing Android applications.",
+      "title": "Spring for Android",
+      "image_url": "./images/nav/15.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 16,
+      "is_in_serving": true,
+      "description": "Supports building web applications with controlled navigation such as checking in for a flight or applying for a loan.",
+      "title": "Spring Web Flow",
+      "image_url": "./images/nav/16.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 17,
+      "is_in_serving": true,
+      "description": "Facilitates the development of contract-first SOAP web services.",
+      "title": "Spring Web Services",
+      "image_url": "./images/nav/17.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    }
+  ],
+  "shops":[
+    {
+      "name": "肯德基",
+      "image_path": "../components/ShopList/images/shop/1.jpg",
+      "rating": 2.6,
+      "recent_order_num": 615,
+      "delivery_mode": {
+        "text": "蜂鸟专送"
+      },
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5
+    },
+    {
+      "name": "麦当劳",
+      "image_path": "../components/ShopList/images/shop/2.jpg",
+      "rating": 2.6,
+      "recent_order_num": 615,
+      "delivery_mode": {
+        "text": "蜂鸟专送"
+      },
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5
+    },
+    {
+      "name": "全聚德",
+      "image_path": "../components/ShopList/images/shop/3.jpg",
+      "rating": 2.6,
+      "recent_order_num": 615,
+      "delivery_mode": {
+        "text": "蜂鸟专送"
+      },
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5
+    },
+    {
+      "name": "来一份",
+      "image_path": "../components/ShopList/images/shop/4.jpg",
+      "rating": 2.6,
+      "recent_order_num": 615,
+      "delivery_mode": {
+        "text": "蜂鸟专送"
+      },
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5
+    },
+    {
+      "name": "左庭右院",
+      "image_path": "../components/ShopList/images/shop/1.jpg",
+      "rating": 2.6,
+      "recent_order_num": 615,
+      "delivery_mode": {
+        "text": "蜂鸟专送"
+      },
+      "float_minimum_order_amount": 20,
+      "float_delivery_fee": 5
+    }
+  ]
+}

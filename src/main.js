@@ -6,6 +6,8 @@ import store from './store/index'
 // import '../static/css/iconfont.css'
 
 import '../static/css/reset.css'
+import './mock/mockServer'
+
 FastClick.attach(document.body);
 Vue.config.productionTip = false
 
