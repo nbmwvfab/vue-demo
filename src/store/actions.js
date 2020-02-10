@@ -1,7 +1,7 @@
 /*
 
  */
-import {RECEIVE_ADDRESS, RECEIVE_CATEGORYS, RECEIVE_SHOPS} from './mutation-types'
+import {RECEIVE_ADDRESS, RECEIVE_CATEGORYS, RECEIVE_SHOPS, RECEIVE_USERINFO} from './mutation-types'
 import {reqAddress,reqCategorys,reqShops} from '../api'
 export default {
 
@@ -31,4 +31,10 @@ export default {
             commit(RECEIVE_SHOPS,{shops})
         }
     },
+    receiveUserInfo({commit},userInfo){
+
+        commit(RECEIVE_USERINFO,{userInfo})
+
+    },
+
 }

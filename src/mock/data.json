@@ -200,7 +200,7 @@
   "shops":[
     {
       "name": "肯德基",
-      "image_path": "../components/ShopList/images/shop/1.jpg",
+      "image_path": "./images/shop/1.jpg",
       "rating": 2.6,
       "recent_order_num": 615,
       "delivery_mode": {
@@ -211,7 +211,7 @@
     },
     {
       "name": "麦当劳",
-      "image_path": "../components/ShopList/images/shop/2.jpg",
+      "image_path": "./images/shop/2.jpg",
       "rating": 2.6,
       "recent_order_num": 615,
       "delivery_mode": {
@@ -222,7 +222,7 @@
     },
     {
       "name": "全聚德",
-      "image_path": "../components/ShopList/images/shop/3.jpg",
+      "image_path": "./images/shop/3.jpg",
       "rating": 2.6,
       "recent_order_num": 615,
       "delivery_mode": {
@@ -233,7 +233,7 @@
     },
     {
       "name": "来一份",
-      "image_path": "../components/ShopList/images/shop/4.jpg",
+      "image_path": "./images/shop/4.jpg",
       "rating": 2.6,
       "recent_order_num": 615,
       "delivery_mode": {
@@ -244,7 +244,7 @@
     },
     {
       "name": "左庭右院",
-      "image_path": "../components/ShopList/images/shop/1.jpg",
+      "image_path": "./images/shop/1.jpg",
       "rating": 2.6,
       "recent_order_num": 615,
       "delivery_mode": {
@@ -253,5 +253,10 @@
       "float_minimum_order_amount": 20,
       "float_delivery_fee": 5
     }
-  ]
+  ],
+  "userInfo": {
+    "_id": "5a9cd9c6ad5b2d34d42b385d",
+    "name": "abc",
+    "phone": "13716962779"
+  }
 }

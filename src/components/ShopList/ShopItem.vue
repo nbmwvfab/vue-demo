@@ -2,7 +2,7 @@
     <div>
         <a>
             <div class="shop_left">
-                <img class="shop_img" :src="shop.image_path">
+                <img class="shop_img" :src="image_path">
             </div>
             <div class="shop_right">
                 <section class="shop_detail_header">
@@ -45,7 +45,13 @@ import Star from "../Star/Star";
 
 export default {
 
-    name: "Shop",
+    name: "ShopItem",
+    data(){
+        return{
+            image_path:require('' + this.shop.image_path)
+        }
+
+    },
     props:{
         shop:Object
     },

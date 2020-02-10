@@ -14,7 +14,7 @@
             FooterGuirde
         },
 		mounted() {
-			this.getAddress()
+			this.getAddress('')
         },
 		methods:{
             ...mapActions(['getAddress'])

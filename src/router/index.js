@@ -8,6 +8,8 @@ import Search from "@/pages/Search/Search";
 import Profile from "@/pages/Profile/Profile";
 import Order from "@/pages/Order/Order";
 import Login from "@/pages/Login/Login";
+import Message from "@/pages/Login/Message/Message";
+import Verification from "@/pages/Login/Verification/Verification";
 Vue.use(VueRouter)
 export default new VueRouter({
     routes:[
@@ -44,7 +46,21 @@ export default new VueRouter({
         },
         {
             path:'/login',
-            component:Login
+            component:Login,
+            children:[
+                {
+                    path:'/login/message',
+                    component:Message,
+                },
+                {
+                    path:'/login/verification',
+                    component:Verification,
+                },
+                {
+                    path:'',
+                    component:Verification,
+                }
+            ]
         },
         {
             path:'/',
