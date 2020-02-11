@@ -7,8 +7,8 @@
                 </section>
                 <Password :getPwd="getPwd"></Password>
                 <section class="login_message">
-                    <input type="text" maxlength="11" placeholder="验证码" v-model="captcha">
-                    <img class="get_verification" src="../images/captcha.svg" alt="captcha">
+                    <input type="text" maxlength="11" placeholder="验证码" v-model="captcha" >
+                    <img class="get_verification" src="http://training.sac.net.cn/sso/authimg" alt="captcha" ref="captcha" @click="getCaptcha">
                 </section>
             </div>
             <button class="login_submit" @click="submit">登录</button>
@@ -63,6 +63,11 @@
             showTip(alertText) {
                 this.tipIsShow = true
                 this.alertText = alertText
+            },
+            // 获取一个新的图片验证码
+            getCaptcha () {
+                // 每次指定的src要不一样
+                this.$refs.captcha.src = 'http://training.sac.net.cn/sso/authimg?'+Date.now()
             }
         },
     }
