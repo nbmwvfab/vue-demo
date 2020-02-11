@@ -8,51 +8,50 @@
     "name": "昌平区北七家宏福科技园(337省道北)"
   },
   "categorys": [
-      {
-        "id": 1,
-        "is_in_serving": true,
-        "description": "特步-春季焕新",
-        "title": "无处不仿古",
-        "link": "",
-        "image_url": "./images/nav/1.jpg",
-        "icon_url": "",
-        "title_color": "",
-        "__v": 0
-      },
-      {
-        "id": 2,
-        "is_in_serving": true,
-        "description": "萍全棉时代-全棉品",
-        "title": "seaweed",
-        "image_url": "./images/nav/2.jpg",
-        "link": "",
-        "icon_url": "",
-        "title_color": "",
-        "__v": 0
-      },
-
-      {
-        "id": 3,
-        "is_in_serving": true,
-        "description": "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.",
-        "title": "Spring Boot",
-        "image_url": "./images/nav/3.jpg",
-        "link": "",
-        "icon_url": "",
-        "title_color": "",
-        "__v": 0
-      },
-      {
-        "id": 4,
-        "is_in_serving": true,
-        "description": "Provides core support for dependency injection, transaction management, web apps, data access, messaging and more.",
-        "title": "Spring Framework",
-        "image_url": "./images/nav/4.jpg",
-        "link": "",
-        "icon_url": "",
-        "title_color": "",
-        "__v": 0
-      },
+    {
+      "id": 1,
+      "is_in_serving": true,
+      "description": "特步-春季焕新",
+      "title": "无处不仿古",
+      "link": "",
+      "image_url": "./images/nav/1.jpg",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 2,
+      "is_in_serving": true,
+      "description": "萍全棉时代-全棉品",
+      "title": "seaweed",
+      "image_url": "./images/nav/2.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 3,
+      "is_in_serving": true,
+      "description": "Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.",
+      "title": "Spring Boot",
+      "image_url": "./images/nav/3.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
+    {
+      "id": 4,
+      "is_in_serving": true,
+      "description": "Provides core support for dependency injection, transaction management, web apps, data access, messaging and more.",
+      "title": "Spring Framework",
+      "image_url": "./images/nav/4.jpg",
+      "link": "",
+      "icon_url": "",
+      "title_color": "",
+      "__v": 0
+    },
     {
       "id": 5,
       "is_in_serving": true,
@@ -197,7 +196,7 @@
       "__v": 0
     }
   ],
-  "shops":[
+  "shops": [
     {
       "name": "肯德基",
       "image_path": "./images/shop/1.jpg",

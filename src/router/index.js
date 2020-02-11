@@ -10,62 +10,63 @@ import Order from "@/pages/Order/Order";
 import Login from "@/pages/Login/Login";
 import Message from "@/pages/Login/Message/Message";
 import Verification from "@/pages/Login/Verification/Verification";
+
 Vue.use(VueRouter)
 export default new VueRouter({
-    routes:[
+    routes: [
         {
-            path:'/msite',
-            component:MSite,
-            meta:{
+            path: '/msite',
+            component: MSite,
+            meta: {
                 showFooter: true
             }
         },
 
         {
-            path:'/search',
-            component:Search,
-            meta:{
+            path: '/search',
+            component: Search,
+            meta: {
                 showFooter: true
             }
         },
 
         {
-            path:'/profile',
-            component:Profile,
-            meta:{
+            path: '/profile',
+            component: Profile,
+            meta: {
                 showFooter: true
             }
         },
 
         {
-            path:'/order',
-            component:Order,
-            meta:{
+            path: '/order',
+            component: Order,
+            meta: {
                 showFooter: true
             }
         },
         {
-            path:'/login',
-            component:Login,
-            children:[
+            path: '/login',
+            component: Login,
+            children: [
                 {
-                    path:'/login/message',
-                    component:Message,
+                    path: '/login/message',
+                    component: Message,
                 },
                 {
-                    path:'/login/verification',
-                    component:Verification,
+                    path: '/login/verification',
+                    component: Verification,
                 },
                 {
-                    path:'',
-                    component:Verification,
+                    path: '',
+                    component: Message,
                 }
             ]
         },
         {
-            path:'/',
-            component:MSite,
-            meta:{
+            path: '/',
+            component: MSite,
+            meta: {
                 showFooter: true
             }
         },

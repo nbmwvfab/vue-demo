@@ -1,7 +1,7 @@
 module.exports = {
     devServer: {
         port: 8082,     // 端口
-        proxy:{
+        proxy: {
             '/api': { // 匹配所有以 '/api'开头的请求路径
                 target: 'http://192.168.1.100:5000', // 代理目标的基础路径
                 changeOrigin: true, // 支持跨域

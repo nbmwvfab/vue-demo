@@ -15,7 +15,7 @@
                 </section>
                 <section class="shop_rating_order">
                     <section class="shop_rating_order_left">
-                       <Star :rate="shop.rating" starSize="star-24"></Star>
+                        <Star :rate="shop.rating" starSize="star-24"></Star>
                         <div class="rating_section">
                             {{shop.rating}}
                         </div>
@@ -41,25 +41,25 @@
 
 <script>
 
-import Star from "../Star/Star";
+    import Star from "../Star/Star";
 
-export default {
+    export default {
 
-    name: "ShopItem",
-    data(){
-        return{
-            image_path:require('' + this.shop.image_path)
+        name: "ShopItem",
+        data() {
+            return {
+                image_path: require('' + this.shop.image_path)
+            }
+
+        },
+        props: {
+            shop: Object
+        },
+        components: {
+            Star
         }
 
-    },
-    props:{
-        shop:Object
-    },
-    components:{
-        Star
     }
-
-}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
@@ -70,16 +70,20 @@ export default {
         width 23%
         height 75px
         padding-right 10px
+
         .shop_img
             display block
             width 100%
             height 100%
+
     .shop_right
         float right
         width 77%
+
         .shop_detail_header
             clearFix()
             width 100%
+
             .shop_title
                 float left
                 width 200px
@@ -87,6 +91,7 @@ export default {
                 font-size 16px
                 line-height 16px
                 font-weight 700
+
                 &::before
                     content '品牌'
                     display inline-block
@@ -97,9 +102,11 @@ export default {
                     padding 2px 2px
                     border-radius 2px
                     margin-right 5px
+
             .shop_detail_ul
                 float right
                 margin-top 3px
+
                 .supports
                     float left
                     font-size 10px
@@ -107,27 +114,33 @@ export default {
                     border 1px solid #f1f1f1
                     padding 0 2px
                     border-radius 2px
+
         .shop_rating_order
             clearFix()
             width 100%
             margin-top 18px
             margin-bottom 8px
+
             .shop_rating_order_left
                 float left
                 color #ff9a0d
+
                 .rating_section
                     float left
                     font-size 10px
                     color #ff6000
                     margin-left 4px
+
                 .order_section
                     float left
                     font-size 10px
                     color #666
                     transform scale(.8)
+
             .shop_rating_order_right
                 float right
                 font-size 0
+
                 .delivery_style
                     transform-origin 35px 0
                     transform scale(.7)
@@ -135,23 +148,28 @@ export default {
                     font-size 12px
                     padding 1px
                     border-radius 2px
+
                 .delivery_left
                     color #fff
                     margin-right -10px
                     background-color #02a774
                     border 1px solid #02a774
+
                 .delivery_right
                     color #02a774
                     border 1px solid #02a774
+
         .shop_distance
             clearFix()
             width 100%
             font-size 12px
+
             .shop_delivery_msg
                 float left
                 transform-origin 0
                 transform scale(.9)
                 color #666
+
             .segmentation
                 color #ccc
 </style>
